@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Side-Nav</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+            crossorigin="anonymous"
+        />
+        <script defer>
+                const collapseNav = () => {
+                    document.getElementById("nav").classlist.toogle();
+                }
+            </script>
+    </head>
+    <body>
+        <div class="page">
+            <div id="nav" class="nav">
+                <div class="logo" onclick="collapseNav()">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="item"><i class="fas fa-home"></i><span>Home</span></div>
+                <div class="item"><i class="fas fa-users"></i><span>Users</span></div>
+                <div class="item"><i class="fas fa-bell"></i><span>Notifications</span></div>
+                <div class="item"><i class="fas fa-book"></i><span>Books</span></div>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
